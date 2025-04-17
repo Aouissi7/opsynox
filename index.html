@@ -19,13 +19,17 @@
       align-items: center;
       justify-content: space-between;
       padding: 1rem 2rem;
-      background-color: #141923;
-      border-bottom: 1px solid #1e1e2f;
+      flex-wrap: wrap;
     }
     header img {
       height: 50px;
       animation: fadeIn 1s ease-in-out;
     }
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
     nav a {
       color: #ccc;
       text-decoration: none;
@@ -82,11 +86,9 @@
       font-size: 2rem;
       color: #00b3ff;
     }
-    .lang-switch {
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-    }
+   .lang-switch {
+      margin-left: 2rem;
+   }
     
     .lang-btn {
       background: linear-gradient(to right, #00b3ff, #9933ff);
@@ -94,6 +96,7 @@
       padding: 0.4rem 1rem;
       border: none;
       border-radius: 8px;
+      margin-left: 1rem;
       text-decoration: none;
       font-weight: bold;
       transition: background 0.3s ease;
@@ -102,7 +105,6 @@
     .lang-btn:hover {
       background: linear-gradient(to right, #009fd9, #8e2de2);
     }
-
     footer {
       background: #141923;
       padding: 2rem;
@@ -122,16 +124,19 @@
 <div class="lang-switch">
   <a href="index-ar.html" class="lang-btn">🇸🇦 عربي</a>
 </div>
-  <header>
-    <img src="logo-opsynox.png" alt="Opsynox Logo">
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#packs">Packs</a>
-      <a href="#expertise">Expertise</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">À propos</a>
-    </nav>
-  </header>
+<header>
+  <img src="logo-opsynox.png" alt="Opsynox Logo">
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#packs">Packs</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">À propos</a>
+  </nav>
+  <div class="lang-switch">
+    <a href="index-ar.html" class="lang-btn">🇸🇦 عربي</a>
+  </div>
+</header>
 
   <section class="hero">
     <h1>Solutions IT & Cybersécurité<br>pour les entreprises ambitieuses</h1>
