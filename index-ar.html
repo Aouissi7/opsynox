@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opsynox - خدمات تكنولوجيا المعلومات</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0f1117;
+      color: #fff;
+      direction: rtl;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background-color: #141923;
+      border-bottom: 1px solid #1e1e2f;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-right: 1.5rem;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #00b3ff;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      background: linear-gradient(to left, #00b3ff, #9933ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #00b3ff;
+      margin-bottom: 1rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #1b1f2b;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-opsynox.png" alt="شعار Opsynox">
+    <nav>
+      <a href="#services">الخدمات</a>
+      <a href="#contact">اتصل بنا</a>
+      <a href="#about">من نحن</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>حلول تكنولوجيا المعلومات والأمن السيبراني<br>للشركات الطموحة</h1>
+    <p>تطوير، سحابة، أمان، بنية تحتية وأكثر.</p>
+  </section>
+
+  <section id="services" class="section">
+    <h2>خدماتنا في تكنولوجيا المعلومات</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>1. تطوير المواقع والتطبيقات</h3>
+        <p>تصميم وتطوير مواقع إلكترونية، تطبيقات ويب مخصصة، تطبيقات الهواتف، وواجهات استخدام عصرية.</p>
+      </div>
+      <div class="card">
+        <h3>2. تطبيقات سطح المكتب والبرمجيات الخاصة</h3>
+        <p>تطبيقات داخلية، برامج حسب الطلب، قواعد بيانات، أتمتة وتحسين سير العمل.</p>
+      </div>
+      <div class="card">
+        <h3>3. الأمن السيبراني والتدقيق</h3>
+        <p>تدقيقات أمنية، اختبار اختراق، الامتثال للمعايير، حماية البيانات والهويات.</p>
+      </div>
+      <div class="card">
+        <h3>4. البنية التحتية السحابية وDevOps</h3>
+        <p>بنية سحابية مرنة، CI/CD، مراقبة، Terraform، Ansible.</p>
+      </div>
+      <div class="card">
+        <h3>5. الخدمات الشبكية والأنظمة</h3>
+        <p>VPN، جدران نارية، نسخ احتياطي، خوادم، Windows/Linux.</p>
+      </div>
+      <div class="card">
+        <h3>6. الاستشارات والدعم التقني</h3>
+        <p>تحول رقمي، تصميم معماريات، تدريب، دعم وتحليل احتياجات.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>من نحن</h2>
+    <p>Opsynox شركة ناشئة متخصصة في تقديم حلول تقنية مبتكرة وخدمات أمن سيبراني متقدمة. نرافق عملاءنا في رحلتهم الرقمية من الفكرة حتى الإنتاج باستخدام أحدث التقنيات وأفضل الممارسات.</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>اتصل بنا</h2>
+    <p>البريد الإلكتروني: contact@opsynox.com</p>
+    <p>العنوان: باريس، فرنسا</p>
+  </section>
+
+  <footer style="text-align:center;padding:1.5rem;background:#141923;color:#888">
+    &copy; 2025 Opsynox. جميع الحقوق محفوظة.
+  </footer>
+</body>
+</html>
