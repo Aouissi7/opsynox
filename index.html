@@ -118,6 +118,79 @@
     @keyframes slideIn {
       from { transform: translateY(-20px); opacity: 0; } to { transform: translateY(0); opacity: 1; }
     }
+    @media screen and (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+      }
+    
+      nav a {
+        margin: 0.5rem 0;
+      }
+    
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+    
+      .section {
+        padding: 2rem 1rem;
+      }
+    
+      .cards {
+        grid-template-columns: 1fr 1fr;
+      }
+    
+      .expertise-logos {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .lang-switch {
+        margin-top: 1rem;
+      }
+    
+      footer {
+        font-size: 0.8rem;
+      }
+    }
+    
+    @media screen and (max-width: 480px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    
+      header img {
+        height: 40px;
+      }
+    
+      .lang-btn {
+        font-size: 0.8rem;
+      }
+    }
+    
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+    
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
   </style>
 </head>
 <body>
